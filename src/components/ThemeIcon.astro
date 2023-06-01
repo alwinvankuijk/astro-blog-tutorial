@@ -53,7 +53,7 @@
     document.documentElement.classList.add('dark');
   }
 
-  window.localStorage.setItem('theme', theme);
+  window.localStorage.setItem('theme', theme!);
 
   const handleToggleClick = () => {
     const element = document.documentElement;
@@ -64,6 +64,6 @@
   };
 
   document
-    .getElementById('themeToggle')
+    .getElementById('themeToggle')!
     .addEventListener('click', handleToggleClick);
 </script>
